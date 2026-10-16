@@ -68,3 +68,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     ),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
+                    RadioButton(
+                        selected = textJK == item,
+                        onClick = {
+                            textJK = item
+                        }
+                    )
+                    Text(item)
+                }
+            }
+        }
